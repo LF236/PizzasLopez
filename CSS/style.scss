@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 //Declaración de Variables SASS
 $headerHeigh: 70px;
+$firstFont: 'Staatliches', cursive;
+$secondFont: 'Roboto Condensed', sans-serif;
 //Reset general
 * {
     margin: 0;
@@ -8,15 +12,135 @@ $headerHeigh: 70px;
 }
 
 body {
-    //background-color: steelblue;
+    background-color: #333;
+}
+
+.content-global {
+    width: 99%;
+    height: 100%;
 }
 
 header {
     //Settings
     height: $headerHeigh;
-    display: flex;
-    justify-content: space-between;
     //Desing
-    background: teal;
-    
+    background: #111;
+    overflow: hidden;
+    .content-global{
+        //Settings
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .header-left, .header-right {
+            //Setting
+            display: flex;
+            align-items: center;
+            //Desing
+            //background: red;
+        }
+        
+        .header-left {
+            color: #fff;
+            font-family: $firstFont;
+            font-size: 1.5em;
+            .icon-local_pizza {
+                font-size: 2em;
+                cursor: pointer;
+                transition: color .5s;
+                &:hover {
+                    animation: iconName .5s 1;
+                    color: #ffd867;
+                }
+
+                @keyframes iconName {
+                    20% {
+                        transform: rotate(20deg);
+                    }
+                    40% {
+                        transform: rotate(-15deg);
+                    } 
+
+                    60% {
+                        transform: rotate(10deg);
+                    }
+
+                    80% {
+                        transform: rotate(-5deg);
+                        
+                    }
+
+                }
+                
+            }
+            .menu {
+                //Settings
+                display: flex;
+                margin-left: 2em;
+                //Desing
+                .menu-item {
+                    //Config
+                    height: $headerHeigh;
+                    padding: 0 30px;
+                    //Desing
+                    list-style: none;
+                    a {
+                        //Settings
+                        transform: translateY(-100%);
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1em;
+                        //Desing
+                        font-family: $secondFont;
+                        text-decoration: none;
+                        color: #fff;        
+                        transition: transform .5s;
+                    }
+
+                    .icon {
+                        font-size: 1.5em;
+                    }
+                    //Animation for the icons of the menu
+                    &:hover a {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+        .header-right {
+            .log {
+                //Setting
+                height: 100%;
+                display: flex;
+                align-items: center;
+                //Desing                
+                span {
+                    //Settings
+                    //padding: 20px;
+                    //Desing
+                    color: #fff;
+                    font-family: $firstFont;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                    transition: color .3s;
+                    &:hover {
+                        color: rgba(#fff,.9);
+                    }
+                    p{
+                        margin-left: 20px;
+                        padding: 0 20px;
+                        //background: purple;
+                        border-radius: 10px;
+                        border: 3px solid #fff;
+                        transition: border .3s;
+                        &:hover {
+                            border: 3px solid rgba(#fff,.6);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

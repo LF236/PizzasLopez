@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?n3pdzr');
-  src:  url('fonts/icomoon.eot?n3pdzr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?n3pdzr') format('truetype'),
-    url('fonts/icomoon.woff?n3pdzr') format('woff'),
-    url('fonts/icomoon.svg?n3pdzr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?qlje4j');
+  src:  url('fonts/icomoon.eot?qlje4j#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qlje4j') format('truetype'),
+    url('fonts/icomoon.woff?qlje4j') format('woff'),
+    url('fonts/icomoon.svg?qlje4j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-banknote:before {
+  content: "\e903";
+}
+.icon-notebook-text:before {
+  content: "\e901";
+}
+.icon-emoji_people:before {
+  content: "\e902";
+}
 .icon-local_pizza:before {
   content: "\e900";
 }
@@ -33,6 +42,9 @@
 }
 .icon-mobile:before {
   content: "\e958";
+}
+.icon-glass:before {
+  content: "\e9a0";
 }
 .icon-menu:before {
   content: "\e9bd";
