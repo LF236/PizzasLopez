@@ -1,0 +1,22 @@
+//Declaración de Variables SASS
+$headerHeigh: 70px;
+//Reset general
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    //background-color: steelblue;
+}
+
+header {
+    //Settings
+    height: $headerHeigh;
+    display: flex;
+    justify-content: space-between;
+    //Desing
+    background: teal;
+    
+}
