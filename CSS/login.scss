@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+//Declaración de Variables SASS
+$headerHeigh: 70px;
+$firstFont: 'Staatliches', cursive;
+$secondFont: 'Roboto Condensed', sans-serif;
+
+.login {
+    //Setting
+    width: 100%;
+    height: 90vh;
+    //Desing
+    background: red;
+    .content-global {
+        margin: auto;
+        background: blue;
+        
+        div[class^="login-"] {
+            width: 50%;
+            margin: auto;
+            background: green;
+            border-bottom: 10px solid red;
+        }
+
+        .login-top {
+            //Setting
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            //Desing
+            color: #fff;
+            font-size: 1.5em;
+            font-family: $secondFont;
+            span {
+                font-size: 2em;
+                color: #ffd867;
+            }
+        }
+
+        .login-middle {
+            height: 40%;
+        }
+
+        .login-need-account {
+            height: 20%;
+        }
+
+        .login-bottom {
+            height: 20%;
+        }
+    }
+}
