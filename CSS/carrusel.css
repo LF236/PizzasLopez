@@ -1,6 +1,63 @@
-.carrusel {
+.carousel {
   width: 100%;
-  height: 200px;
+  height: 455px;
   background: red;
+}
+
+.carousel .content-global {
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: steelblue;
+}
+
+.carousel .content-global .carousel-images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: green;
+}
+
+.carousel .content-global div[class^="button"] {
+  z-index: 10;
+  width: 5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rebeccapurple;
+}
+
+.carousel .content-global div[class^="button"] .icon-content {
+  font-size: 2em;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(17, 17, 17, 0.6);
+}
+
+.carousel .content-global div[class^="button"] .icon-content .icon {
+  display: block;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.carousel .content-global div[class^="button"] .icon-content:hover .icon {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 /*# sourceMappingURL=carrusel.css.map */

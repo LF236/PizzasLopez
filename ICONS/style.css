@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qlje4j');
-  src:  url('fonts/icomoon.eot?qlje4j#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qlje4j') format('truetype'),
-    url('fonts/icomoon.woff?qlje4j') format('woff'),
-    url('fonts/icomoon.svg?qlje4j#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vfzq5z');
+  src:  url('fonts/icomoon.eot?vfzq5z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vfzq5z') format('truetype'),
+    url('fonts/icomoon.woff?vfzq5z') format('woff'),
+    url('fonts/icomoon.svg?vfzq5z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-arrow-left:before {
+  content: "\e904";
+}
 .icon-banknote:before {
   content: "\e903";
 }

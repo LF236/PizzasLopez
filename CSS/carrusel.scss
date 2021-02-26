@@ -1,5 +1,59 @@
-.carrusel {
+//Variables globales del carrusel
+$contentWidth: 1349px;
+$contentHeight: 455px;
+.carousel {
+    //Setting
     width: 100%;
-    height: 200px;
+    height: $contentHeight;
+    //Desing
     background: red;
+    .content-global {
+        //Setting
+        //height: $contentHeight;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        //Desing
+        background: steelblue;
+        .carousel-images {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            background: green;
+        }
+
+        //Botones para movimiento
+        div[class^="button"] {
+            //Setting
+            z-index: 10;
+            width: 5%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rebeccapurple;
+
+            .icon-content {
+                font-size: 2em;
+                cursor: pointer;
+                color: #fff;
+                //Desing
+                //background-color: rgba(#111,.6);
+                padding: 10px;
+                border-radius: 50%;
+                background-color: rgba(#111,.6);
+                .icon {
+                    display: block;
+                    transition: transform .3s;
+                }
+
+                &:hover .icon {
+                    transform: scale(0.8);
+                }
+                
+            }
+        }
+    }
 }
