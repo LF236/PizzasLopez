@@ -23,6 +23,10 @@
   background: green;
 }
 
+.carousel .content-global .carousel-images .content-aux {
+  background: coral;
+}
+
 .carousel .content-global div[class^="button"] {
   z-index: 10;
   width: 5%;
@@ -36,7 +40,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rebeccapurple;
 }
 
 .carousel .content-global div[class^="button"] .icon-content {
@@ -44,7 +47,7 @@
   cursor: pointer;
   color: #fff;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 60%;
   background-color: rgba(17, 17, 17, 0.6);
 }
 

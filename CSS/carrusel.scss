@@ -22,6 +22,9 @@ $contentHeight: 455px;
             position: absolute;
 
             background: green;
+            .content-aux {
+                background: coral;
+            }
         }
 
         //Botones para movimiento
@@ -33,7 +36,7 @@ $contentHeight: 455px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rebeccapurple;
+            //background-color: rebeccapurple;
 
             .icon-content {
                 font-size: 2em;
@@ -42,7 +45,7 @@ $contentHeight: 455px;
                 //Desing
                 //background-color: rgba(#111,.6);
                 padding: 10px;
-                border-radius: 50%;
+                border-radius: 60%;
                 background-color: rgba(#111,.6);
                 .icon {
                     display: block;

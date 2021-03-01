@@ -1,0 +1,43 @@
+[
+    {
+        "Name" : "Pizza De Pepperoni",
+        "Price" : 150,
+        "Image" : "../IMAGES/carrusel/PizzaPeperoni.jpg",
+        "Description" : "Pizza de Peperoni, rellena de queso"
+    },
+
+    {
+        "Name" : "Pizza De Champiñones",
+        "Price" : 180,
+        "Image" : "../IMAGES/carrusel/PizzaChampi.jpg",
+        "Description" : "Pizza de champiñones, con orilla rellena de queso"
+    },
+
+    {
+        "Name" : "Rollitos de Pizza",
+        "Price" : 120,
+        "Image" : "../IMAGES/carrusel/RollitosPizza.jpg",
+        "Description" : "Rollitos de Pizza con el relleno preferido"
+    },
+
+    {
+        "Name" : "Pizza Tradicional",
+        "Price" : 190,
+        "Image" : "../IMAGES/carrusel/PizzaTradicional.jpg",
+        "Description" : "Pizza de tomate, con albahaca y queso"
+    },
+
+    {
+        "Name" : "Pizza de Queso",
+        "Price" : 180,
+        "Image" : "../IMAGES/carrusel/PizzaQueso.jpg",
+        "Description" : "Pizza de Tres queso, con orilla de queso crema"
+    },
+
+    {
+        "Name" : "Pizza Vegetariana",
+        "Price" : 200,
+        "Image" : "../IMAGES/carrusel/PizzaVegetariana.jpg",
+        "Description" : "Tradiciona Pizza vegana, queso vegano, tomates cherry"
+    }
+]
