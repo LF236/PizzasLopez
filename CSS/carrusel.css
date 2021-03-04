@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 .carousel {
   width: 100%;
   height: 455px;
@@ -25,6 +27,47 @@
 
 .carousel .content-global .carousel-images .content-aux {
   background: coral;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .content-global .carousel-images .content-aux .carousel-images-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-backdrop-filter: brightness(50%);
+          backdrop-filter: brightness(50%);
+}
+
+.carousel .content-global .carousel-images .content-aux .carousel-images-item .carousel-images-content {
+  width: 100%;
+  background: rgba(17, 17, 17, 0.2);
+  color: #fff;
+}
+
+.carousel .content-global .carousel-images .content-aux .carousel-images-item .carousel-images-content h3 {
+  font-size: 2em;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+}
+
+.carousel .content-global .carousel-images .content-aux .carousel-images-item .carousel-images-content p, .carousel .content-global .carousel-images .content-aux .carousel-images-item .carousel-images-content span {
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .carousel .content-global div[class^="button"] {

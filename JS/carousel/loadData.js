@@ -4,7 +4,7 @@ const printData = data => {
     aux.classList.add('content-aux')
     data.forEach(el => {
         const HTML = `
-            <div style="${el.Image}">
+            <div style="background-image: url('${el.Image}')" class="carousel-images-item">
                 <div class="carousel-images-content">
                     <h3>${el.Name}</h3>
                     <p>${el.Description}</p>
