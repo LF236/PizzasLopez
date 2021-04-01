@@ -10,10 +10,10 @@ $secondFont: 'Roboto Condensed', sans-serif;
     width: 100%;
     height: 90vh;
     //Desing
-    background: red;
+    //background: red;
     .content-global {
         margin: auto;
-        background: blue;
+        //background: blue;
         
         div[class^="login-"] {
             width: 50%;
@@ -41,6 +41,65 @@ $secondFont: 'Roboto Condensed', sans-serif;
 
         .login-middle {
             height: 40%;
+           
+            form {
+                background-color: rebeccapurple;
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 10px;
+                margin: 20px 0;
+                div[class^='form-'] {
+                    width: 50%;
+                    //height: 50%;
+                    margin: auto;
+                    color: #fff;
+                    //font-size: 1.1em;
+                    font-family: $secondFont;
+                    
+                }
+                .form-top {
+                    background: rebeccapurple;
+                    &::before {
+                        display: block;
+                        content: 'Nombre de usuario o dirección de correo';
+                        margin-bottom: 10px;
+                    }
+                    input {
+                        display: block;
+                        background: transparent;
+                        width: 80%;
+                        height: 25px;
+                        border-radius: 5px;
+                        border: 1px solid #333;
+                        &:focus {
+                            border: 1px solid #fff;
+                        }
+                    }
+                }
+
+                .form-bottom {
+                    background: darkgoldenrod;
+                    .form-bottom-labels {
+                        background: red;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 20%;
+                    }
+                    input {
+                        display: block;
+                        background: transparent;
+                        width: 80%;
+                        height: 25px;
+                        border-radius: 5px;
+                        border: 1px solid #333;
+                        &:focus {
+                            border: 1px solid #fff;
+                        }
+                    }
+                }
+            }
         }
 
         .login-need-account {
