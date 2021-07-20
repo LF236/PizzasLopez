@@ -4,9 +4,17 @@
 $headerHeigh: 70px;
 $firstFont: "Staatliches", cursive;
 $secondFont: "Roboto Condensed", sans-serif;
+:root {
+    --movingCarousel: 0%;
+}
 //Variables globales del carrusel
 $contentWidth: 1349px;
 $contentHeight: 455px;
+.content-global {
+    width: 99%;
+    height: 100%;
+}
+
 .carousel {
     //Setting
     width: 100%;
@@ -27,37 +35,46 @@ $contentHeight: 455px;
         height: 100%;
         position: absolute;
         background: green;
+        
         .content-aux {
             background: coral;
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transition: transform .5s;
+            transform: translateX(var(--movingCarousel));
+            //transform: translateX(-100%);
             .carousel-images-item {
+                
                 //Settings
                 width: 100%;
                 height: 100%;
                 display: flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                justify-content: flex-end;
-
+                align-items: flex-end;
+                justify-content: center;
                 //Desing
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                backdrop-filter: brightness(50%);
-                .carousel-images-content {
-                    width: 100%;
-                    background: rgba(#111, 0.2);
-                    color: #fff;
-                    h3 {
-                        font-size: 2em;
-                        font-family: $firstFont;
-                        letter-spacing: 1px;
-                    }
-                    p,
-                    span {
-                        font-size: 1.2em;
-                        font-family: $secondFont;
+                .content-global {
+                    height: 19%;
+                    //background: blue;
+                    .carousel-images-content {
+                        width: 100%;
+                        background: rgba(#111, 0.2);
+                        color: #fff;
+                        h3 {
+                            font-size: 2em;
+                            font-family: $firstFont;
+                            letter-spacing: 1px;
+                        }
+                        p,
+                        span {
+                            font-size: 1.2em;
+                            font-family: $secondFont;
+                        }
                     }
                 }
             }

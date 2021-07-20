@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="CSS/carrusel.css">
     <link rel="stylesheet" href="ICONS/style.css">
 </head>
+
 <body>
     <!-- Diseño del header -->
     <header>
-            <div class="content-global">
+        <div class="content-global">
 
-            
+
             <div class="header-left">
                 <span class="icon icon-local_pizza"></span>
                 <span>Pizzas López</span>
@@ -26,10 +28,12 @@
             </div>
 
             <div class="header-right">
-               
+
                 <div class="log">
                     <span>Sign In</span>
-                    <span><p>Sign Up</p></span>
+                    <span>
+                        <p>Sign Up</p>
+                    </span>
                 </div>
             </div>
         </div>
@@ -37,21 +41,26 @@
 
     <!-- Iniciamos el diseño del carrusel -->
     <aside class="carousel">
-        <div class="button-left">
+        <div class="button-left" id="button-left">
             <span class="icon-content"><span class="icon icon-arrow-left"></span></span>
         </div>
 
         <div class="carousel-images" id="carousel-images">
+
             <div class="carousel-images-content">
 
             </div>
+
+
         </div>
 
-        <div class="button-right">
+        <div class="button-right" id="button-right">
             <span class="icon-content"><span class="icon icon-arrow-right"></span></span>
         </div>
     </aside>
 
     <script src="JS/carousel/loadData.js"></script>
+    <script src="JS/carousel/movingCarousel.js"></script>
 </body>
+
 </html>

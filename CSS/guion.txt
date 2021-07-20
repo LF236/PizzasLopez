@@ -1,0 +1,20 @@
+Bienvenido al sistema de registro del hotel "Casa Roja"
+Presiona 1, para reservar una habitación
+ ****Redirige al menú de la habitación
+Presiona 2, para cancelar una habitación rentada con anterioridad
+Presiona 3, par solicitar atención personalizada
+***Redirige a un tono que dice "Será comunicado con un personal especializado"
+Presiona 4 Para salir
+***Redirige a un tono que diga "Gracias por llamar al hotel "Casa Roja"
+Tono "menú habitación"
+Bienvenido al sistema para reservar una habitación
+Si quieres rentar una habitación grande presiona 1
+Si quieres rentar una habitación mediana presiona 2
+Si quieres rentar una habitación pequeña presiona 3
+Si quieres salir del menuú presiona 4
+Tono "Tiempo"
+Presiona 1, si quieres alquilar por 2 horas
+Presiona 2, si quieres alquilar por 4 horas
+Presiona 3, si quieres alquilar por 6 horas
+Presiona 4, si quieres alquilar por 8 horas
+Presiona 5, si quieres alquilar por 10 horas

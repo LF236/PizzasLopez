@@ -2,18 +2,21 @@ let content = document.getElementById('carousel-images')
 const printData = data => {
     let aux = document.createElement('div')
     aux.classList.add('content-aux')
+    aux.setAttribute('id','content-aux')
     data.forEach(el => {
         const HTML = `
             <div style="background-image: url('${el.Image}')" class="carousel-images-item">
-                <div class="carousel-images-content">
-                    <h3>${el.Name}</h3>
-                    <p>${el.Description}</p>
-                    <span>${el.Price}</span>
-                    <span class="button"></span>
-                </div>
+                <div class="content-global">
+                    <div class="carousel-images-content">
+                        <h3>${el.Name}</h3>
+                        <p>${el.Description}</p>
+                        <span>${el.Price}</span>
+                        <span class="button"></span>
+                    </div>
+                <div>
             <div>
         `
-        console.log(HTML)
+        //console.log(HTML)
         aux.insertAdjacentHTML('beforeend',HTML)
     })
     content.appendChild(aux)

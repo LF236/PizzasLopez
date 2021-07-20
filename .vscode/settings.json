@@ -1,0 +1,28 @@
+{
+    "activitusbar.combineWorkspaceSettings": true,
+    "activitusbar.searchViewInPanel": true,
+    "activitusbar.views": [
+
+
+        {
+            "name": "explorer",
+            "codicon": "file-text"
+        },
+        {
+            "name": "search",
+            "codicon": "search"
+        },
+        {
+            "name": "scm",
+            "codicon": "repo-forked"
+        },
+        {
+            "name": "debug",
+            "codicon": "bug"
+        },
+        {
+            "name": "extensions",
+            "codicon": "package"
+        }
+    ]
+}
