@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzas López</title>
     <link rel="stylesheet" href="CSS/style.css">
-  
+
+    
     <link rel="stylesheet" href="ICONS/style.css">
+    
 </head>
 
-<body>
+<body  ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
     <!-- Diseño del header -->
     <header>
         <!-- Contenido que todos los contenedores van a tener -->
@@ -23,20 +25,20 @@
                 
                 <!-- Icono para mostrar el menú en el diseño movil -->
                 <div class="menu-icon">
-                    <span class="icon icon-notebook-text"></span>
+                    <span class="icon icon-menu" id="icon-menu"></span>
                 </div>
             </div>
             
-            <nav>
+            <nav id="nav">
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="icon icon-banknote"></a><a href="#">Promociones</a></li>
+                    <li class="menu-item"><a href="#" class="icon icon-spoon-knife"></a><a href="#">Promociones</a></li>
                     <li class="menu-item"><a href="#" class="icon icon-glass"></a><a href="#">Bebidas</a></li>
                     <li class="menu-item"><a href="#" class="icon icon-emoji_people"></a><a href="#">Contácto</a></li>
                 </ul>
 
                 <ul class="log">
-                    <li>Sign In</li>
-                    <li>Sign Up</li>
+                    <li><a href="#" class="icon icon-emoji_people"></a><a href="#">Login</a></li>
+                    <li><a href="#" class="icon icon-user-add"></a>Sign In</a></li>
                 </ul>   
             </nav>
         </div>
@@ -68,6 +70,7 @@
     
     <!--<script src="JS/carousel/loadData.js"></script>
     <script src="JS/carousel/movingCarousel.js"></script> -->
+    <script src="JS/menu.js"></script>
 </body>
 
 </html>

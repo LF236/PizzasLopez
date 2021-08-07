@@ -7,11 +7,18 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #555;
+  overflow: hidden;
+}
+
 header {
-  background: rebeccapurple;
+  width: 100%;
+  background: #222;
 }
 
 header .content-global {
+  position: relative;
   padding: 10px 10px;
 }
 
@@ -25,13 +32,53 @@ header .content-global .icon-page {
   font-size: 2em;
 }
 
-header .content-global .icon-page .icon-page-left {
-  background: red;
-}
-
 header .content-global .icon-page .icon-page-left .icon-local_pizza {
   color: yellow;
   cursor: pointer;
+  display: inline-block;
+}
+
+header .content-global .icon-page .icon-page-left .icon-local_pizza:hover {
+  -webkit-animation: iconsMove 1s 1;
+          animation: iconsMove 1s 1;
+}
+
+@-webkit-keyframes iconsMove {
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes iconsMove {
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
 }
 
 header .content-global .icon-page .icon-page-left p {
@@ -40,8 +87,61 @@ header .content-global .icon-page .icon-page-left p {
   color: #fff;
 }
 
+header .content-global .icon-page .menu-icon {
+  cursor: pointer;
+  color: #fff;
+}
+
 header .content-global nav {
-  background: red;
-  display: none;
+  background: rgba(34, 34, 34, 0.4);
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 55px;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+header .content-global nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  list-style: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: #fff;
+}
+
+header .content-global nav ul li:hover {
+  background: #222;
+}
+
+header .content-global nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .content-global nav ul li a:first-child {
+  font-size: 1.6em;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-right: 5px;
+}
+
+header .content-global nav ul li:hover a:first-child {
+  color: yellow;
+}
+
+header .content-global nav.move-menu {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 /*# sourceMappingURL=style.css.map */

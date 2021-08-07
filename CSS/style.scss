@@ -12,33 +12,98 @@ $secondFont: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
 
+body {
+    background: #555;
+    overflow: hidden;
+}
+
 header {
-    background: rebeccapurple;
+    width: 100%;
+    background: #222;
     .content-global {
+        position: relative;
         padding: 10px 10px;
         .icon-page {
             display: flex;
             justify-content: space-between;
-            
-            //background: blue;
             font-size: 2em;
             .icon-page-left {
-                background: red;
                 .icon-local_pizza {
                     color: yellow;
                     cursor: pointer;
+                    display: inline-block;
+                    &:hover {
+                        animation: iconsMove 1s 1;
+                    }
+                    @keyframes iconsMove{
+                        20%{
+                            transform: rotate(20deg);
+                        }
+                        40%{
+                            transform: rotate(-15deg);
+                        }
+                        60%{
+                            transform: rotate(10deg);
+                        }
+                        80%{
+                            transform: rotate(-5deg);
+                        }
+                    }
                 }
+
                 p {
                     font-family: $firstFont;
                     display: inline-block;
                     color: #fff;
                 }
             }
+
+            .menu-icon {
+                cursor: pointer;
+                color: #fff;
+            }
         }
 
         nav {
-            background: red;
-            display: none;
+            background: rgba(#222, .4);
+            position: absolute;
+            //height: 50vh;
+            width: 50%;
+            left: 0;
+            top: 55px;
+            transform: translateX(200%);
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px;
+                    list-style: none;
+                    transition: all .2s;
+                    color: #fff;
+                    &:hover {
+                        background: #222;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    
+                    a:first-child {
+                        font-size: 1.6em;
+                        transition: all .2s;
+                        margin-right: 5px;
+                    }
+
+                    &:hover a:first-child {
+                        color: yellow;
+                    }
+                }
+            }
+            transition: transform .5s;
+            &.move-menu {
+                transform: translateX(100%);
+            }
         }
     }
 }
