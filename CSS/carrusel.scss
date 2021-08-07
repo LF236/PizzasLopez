@@ -21,7 +21,7 @@ $contentHeight: 455px;
     height: $contentHeight;
     //Desing
     background: red;
-
+    overflow: hidden;
     //Setting
     //height: $contentHeight;
     margin: auto;
@@ -110,5 +110,15 @@ $contentHeight: 455px;
                 transform: scale(0.8);
             }
         }
+    }
+}
+
+main {
+    background: red;
+
+    .ofertas {
+        width: 90%;
+        margin: auto;
+        background: salmon;
     }
 }

@@ -6,40 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzas López</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/carrusel.css">
+  
     <link rel="stylesheet" href="ICONS/style.css">
 </head>
 
 <body>
     <!-- Diseño del header -->
     <header>
+        <!-- Contenido que todos los contenedores van a tener -->
         <div class="content-global">
-
-
-            <div class="header-left">
-                <span class="icon icon-local_pizza"></span>
-                <span>Pizzas López</span>
+            <div class="icon-page">
+                <div class="icon-page-left">
+                    <span class="icon icon-local_pizza"></span>
+                    <p>Pizzas López</p>
+                </div>
+                
+                <!-- Icono para mostrar el menú en el diseño movil -->
+                <div class="menu-icon">
+                    <span class="icon icon-notebook-text"></span>
+                </div>
+            </div>
+            
+            <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="icon icon-notebook-text"></a><a href="#">Menú</a></li>
                     <li class="menu-item"><a href="#" class="icon icon-banknote"></a><a href="#">Promociones</a></li>
                     <li class="menu-item"><a href="#" class="icon icon-glass"></a><a href="#">Bebidas</a></li>
                     <li class="menu-item"><a href="#" class="icon icon-emoji_people"></a><a href="#">Contácto</a></li>
                 </ul>
-            </div>
 
-            <div class="header-right">
-
-                <div class="log">
-                    <span>Sign In</span>
-                    <span>
-                        <p>Sign Up</p>
-                    </span>
-                </div>
-            </div>
+                <ul class="log">
+                    <li>Sign In</li>
+                    <li>Sign Up</li>
+                </ul>   
+            </nav>
         </div>
     </header>
-
+   
     <!-- Iniciamos el diseño del carrusel -->
+    <!--
     <aside class="carousel">
         <div class="button-left" id="button-left">
             <span class="icon-content"><span class="icon icon-arrow-left"></span></span>
@@ -58,9 +62,12 @@
             <span class="icon-content"><span class="icon icon-arrow-right"></span></span>
         </div>
     </aside>
+    -->
+    
 
-    <script src="JS/carousel/loadData.js"></script>
-    <script src="JS/carousel/movingCarousel.js"></script>
+    
+    <!--<script src="JS/carousel/loadData.js"></script>
+    <script src="JS/carousel/movingCarousel.js"></script> -->
 </body>
 
 </html>

@@ -7,177 +7,41 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #333;
-  min-height: 100vh;
-}
-
-.content-global {
-  width: 99%;
-  height: 100%;
-}
-
 header {
-  height: 70px;
-  background: #111;
-  overflow: hidden;
+  background: rebeccapurple;
 }
 
 header .content-global {
-  margin: auto;
+  padding: 10px 10px;
+}
+
+header .content-global .icon-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-header .content-global .header-left, header .content-global .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .content-global .header-left {
-  color: #fff;
-  font-family: "Staatliches", cursive;
-  font-size: 1.5em;
-}
-
-header .content-global .header-left .icon-local_pizza {
   font-size: 2em;
+}
+
+header .content-global .icon-page .icon-page-left {
+  background: red;
+}
+
+header .content-global .icon-page .icon-page-left .icon-local_pizza {
+  color: yellow;
   cursor: pointer;
-  -webkit-transition: color .5s;
-  transition: color .5s;
 }
 
-header .content-global .header-left .icon-local_pizza:hover {
-  -webkit-animation: iconName .5s 1;
-          animation: iconName .5s 1;
-  color: #ffd867;
-}
-
-@-webkit-keyframes iconName {
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  60% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  80% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-}
-
-@keyframes iconName {
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  60% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  80% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-}
-
-header .content-global .header-left .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2em;
-}
-
-header .content-global .header-left .menu .menu-item {
-  height: 70px;
-  padding: 0 30px;
-  list-style: none;
-}
-
-header .content-global .header-left .menu .menu-item a {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1em;
-  font-family: "Roboto Condensed", sans-serif;
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-}
-
-header .content-global .header-left .menu .menu-item .icon {
-  font-size: 1.5em;
-}
-
-header .content-global .header-left .menu .menu-item:hover a {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-header .content-global .header-right .log {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .content-global .header-right .log span {
-  color: #fff;
+header .content-global .icon-page .icon-page-left p {
   font-family: "Staatliches", cursive;
-  font-size: 1.5em;
-  cursor: pointer;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  display: inline-block;
+  color: #fff;
 }
 
-header .content-global .header-right .log span:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-header .content-global .header-right .log span p {
-  margin-left: 20px;
-  padding: 0 20px;
-  border-radius: 10px;
-  border: 3px solid #fff;
-  -webkit-transition: border .3s;
-  transition: border .3s;
-}
-
-header .content-global .header-right .log span p:hover {
-  border: 3px solid rgba(255, 255, 255, 0.6);
+header .content-global nav {
+  background: red;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@
   width: 100%;
   height: 455px;
   background: red;
+  overflow: hidden;
   margin: auto;
   position: relative;
   display: -webkit-box;
@@ -126,5 +127,15 @@
 .carousel div[class^="button"] .icon-content:hover .icon {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+main {
+  background: red;
+}
+
+main .ofertas {
+  width: 90%;
+  margin: auto;
+  background: salmon;
 }
 /*# sourceMappingURL=carrusel.css.map */
