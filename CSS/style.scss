@@ -65,13 +65,14 @@ header {
         }
 
         nav {
-            background: rgba(#222, .4);
+            background: rgba(#222, .8);
             position: absolute;
             //height: 50vh;
             width: 50%;
             left: 0;
             top: 55px;
             transform: translateX(200%);
+            z-index: 100;
             ul {
                 li {
                     display: flex;
