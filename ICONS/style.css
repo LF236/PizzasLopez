@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fyyl2y');
-  src:  url('fonts/icomoon.eot?fyyl2y#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fyyl2y') format('truetype'),
-    url('fonts/icomoon.woff?fyyl2y') format('woff'),
-    url('fonts/icomoon.svg?fyyl2y#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ekkxbc');
+  src:  url('fonts/icomoon.eot?ekkxbc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ekkxbc') format('truetype'),
+    url('fonts/icomoon.woff?ekkxbc') format('woff'),
+    url('fonts/icomoon.svg?ekkxbc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,6 +30,9 @@
 }
 .icon-user-add:before {
   content: "\e901";
+}
+.icon-stop_circle:before {
+  content: "\e904";
 }
 .icon-emoji_people:before {
   content: "\e903";
