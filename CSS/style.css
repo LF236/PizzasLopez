@@ -81,10 +81,11 @@ header .content-global .icon-page .icon-page-left .icon-local_pizza:hover {
   }
 }
 
-header .content-global .icon-page .icon-page-left p {
+header .content-global .icon-page .icon-page-left h1 {
   font-family: "Staatliches", cursive;
   display: inline-block;
   color: #fff;
+  font-size: 1em;
 }
 
 header .content-global .icon-page .menu-icon {
@@ -144,5 +145,12 @@ header .content-global nav ul li:hover a:first-child {
 header .content-global nav.move-menu {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+}
+
+main {
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  background-color: greenyellow;
 }
 /*# sourceMappingURL=style.css.map */

@@ -53,10 +53,11 @@ header {
                     }
                 }
 
-                p {
+                h1 {
                     font-family: $firstFont;
                     display: inline-block;
                     color: #fff;
+                    font-size: 1em;
                 }
             }
 
@@ -109,4 +110,11 @@ header {
             }
         }
     }
+}
+
+main {
+    margin-top: 40px;
+    width: 100%;
+    height: 100px;
+    background-color: greenyellow;
 }

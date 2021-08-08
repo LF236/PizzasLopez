@@ -19,14 +19,12 @@ $contentHeight: 300px;
     height: $contentHeight;
    
     //Desing
-    background: red;
     .carousel-images {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
         //Esta clase se agrega por elemento automáticamente con JS
         .content-aux {
-            background: coral;
             width: 100%;
             height: 100%;
             display: flex;
